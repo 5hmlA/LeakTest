@@ -6,7 +6,12 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <!--设置ripper颜色，5.0以下激活(statepress=true)颜色-->
+        <item name="colorControlHighlight">@android:color/holo_blue_light</item>
+        <item name="colorControlActivated">@android:color/holo_green_light</item>
+        <item name="colorControlNormal">@android:color/holo_red_light</item>
     </style>
+        <!--<item name="android:colorControlActivated">@android:color/holo_orange_dark</item>-->
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

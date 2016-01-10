@@ -6,4 +6,17 @@
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--注意android:colorAccent无效，只有colorAccent才有效，设置原生控件颜色CheckBox,progressbar,seekbar,
+        radiobutton，floatacctionbutton-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--设置原生控件颜色CheckBox,progressbar,seekbar,radiobutton。注意:会覆盖colorAccent颜色-->
+        <item name="colorControlActivated">@android:color/holo_green_light</item>
+        <!--当同时存在同名属性时，以android:开头为准-->
+        <item name="colorControlHighlight">@android:color/holo_blue_light</item>
+        <item name="colorControlNormal">@android:color/holo_red_light</item>
+    </style>
 </resources>

@@ -1,23 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jonas.leaktest.MainActivity">
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.jonas.leaktest.MainActivity">
 
     <TextView
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!" android:id="@+id/textView"/>
+    <ImageView
+            android:layout_below="@id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:src="@mipmap/ic_launcher"/>
+
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:onClick="jump"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="jump" android:id="@+id/button"/>
+    <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New RadioButton"
+            android:id="@+id/radioButton" android:layout_below="@+id/button"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New CheckBox"
+            android:id="@+id/checkBox" android:layout_below="@+id/button"
+            android:layout_toRightOf="@+id/radioButton" android:layout_toEndOf="@+id/radioButton"/>
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar" android:layout_below="@+id/radioButton"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar" android:layout_alignTop="@+id/progressBar"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            android:layout_below="@+id/seekBar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_below="@+id/ratingBar"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true">
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="button1"/>
+        <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="button2"/>
+    </RadioGroup>
 </RelativeLayout>
